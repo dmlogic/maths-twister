@@ -27,8 +27,8 @@
                     <li>After your 10 seconds is up, the answer will appear on the screen</li>
                     <li>You can repeat until all players have fallen</li>
                 </ul>
-                <div class="spin-the-wheel text-center">
-                    <button type="button" class="btn btn-outline-info spin-button">
+                <div class="spin-the-wheel text-center" id="wheel1">
+                    <button type="button" class="btn btn-outline-info spin-button" id="firstSpinButton">
                         Spin the wheel
                     </button>
                 </div>
@@ -36,12 +36,12 @@
             <section id="next-move" class="visually-hidden">
                 <h2 class="green">Your next move</h2>
                 <div id="your-move" class="text-center">
-                    <div class="limb orange">Right foot</div>
-                    <div class="target-color">Green</div>
+                    <div id="limb" class="limb orange"></div>
+                    <div id="target-color" class="target-color"></div>
                 </div>
                 <h2 class="dark-blue">Your Calculation</h2>
                 <p class="your-calculation text-center">
-                    What is <span class="number">5 x 6</span>?
+                    What is <span id="calculation" class="number"></span>?
                 </p>
                 <p class="">
                     <button type="button" class="btn btn-outline-info btn-lg" id="start-timer">
@@ -50,19 +50,20 @@
                 </p>
             </section>
             <section id="timer" class="text-center visually-hidden">
-                <div class="timer-number">10</div>
+                <div class="timer-number" id="timer-number"></div>
             </section>
             <section id="answer" class="visually-hidden">
                 <h2  class="green">The answer is ...</h2>
                 <p class="the-answer text-center">
-                    <span class="number orange">30</span>
+                    <span class="number orange" id="the-answer"></span>
                 </p>
-                <div class="spin-the-wheel text-center">
-                    <button type="button" class="btn btn-outline-info spin-button">
+                <div class="spin-the-wheel text-center" id="wheel2">
+                    <button type="button" class="btn btn-outline-info spin-button"  id="secondSpinButton">
                         Spin again
                     </button>
                 </div>
             </section>
         </div>
+        <script type="text/javascript" src="code.js"></script>
     </body>
 </html>
