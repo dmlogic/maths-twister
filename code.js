@@ -86,3 +86,6 @@ firstSpinButton.addEventListener("click",startWheelSpinning);
 startTimer.addEventListener("click",mathsTimer);
 secondSpinButton.addEventListener("click",spinAgain);
 
+document.querySelectorAll('.display-seconds').forEach(function(item){
+    item.textContent = countDownSeconds;
+})
